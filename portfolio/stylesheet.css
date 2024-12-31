@@ -1,0 +1,362 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color for readability */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+.header {
+    background-color: #f8f9fa; /* Light background for header */
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+/* Home Section */
+.home {
+    background-color: #f8f9fa; /* Same light background as header */
+    padding: 50px 0;
+}
+
+.home h1 .text-primary {
+    color: #007bff; /* Primary color for name */
+}
+
+.home .lead {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+/* About Section */
+#about {
+    background-color: #f1f3f5; /* Slightly darker background for About section */
+    padding: 50px 0;
+}
+
+#about .text-primary {
+    color: #007bff;
+}
+
+#about .sub-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #007bff; /* Blue active tab for better contrast */
+}
+
+/* What I Do Section */
+#what {
+    padding: 50px 0;
+}
+
+#what .what-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#what .what-list div {
+    text-align: center;
+    flex-basis: 30%;
+}
+#what .what-list div :hover{
+    background-color: cyan;
+}
+
+#what .what-list i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#what .what-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#what .what-list a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    background-color: #ffffff; /* White background for portfolio */
+    padding: 50px 0;
+}
+
+.portfolio-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #007bff;
+}
+
+.portfolio-description {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-details h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-link {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Certificates Section */
+.certificates-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.certificates-section h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.certificates-section .intro-text {
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.certificates-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.certificates-logos img {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certificates-logos img:hover {
+    transform: scale(1.1); 
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    max-width: 80%;
+    margin: 5% auto;
+    display: block;
+    width: auto;
+    max-height: 90%;
+}
+
+.close {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #555;
+}
+/* Custom styling for "What I Do" section */
+#what {
+    background-color: rgb(18, 13, 55); 
+    color: #fff; 
+    padding: 40px 0; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    #what {
+        padding: 30px 0; 
+    }
+
+    .what-list .col-md-4 {
+        margin-bottom: 15px; 
+    }
+
+    .what-list div {
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); 
+    }
+}
+
+/* Add hover effect for individual items inside the "What I Do" section */
+.what-list div:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+.navbar-collapse {
+    background-color: #343a40;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-collapse .nav-link {
+    color: #ffffff;
+}
+
+.navbar-collapse .nav-link:hover {
+    color: #ddd;
+}
+
+.navbar-collapse .navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+    }
+}
+
+.portfolio-section {
+    background-color: #141516;
+    color: white;
+    padding: 50px 0;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.portfolio-item {
+    background-color: #1d1f22;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.project-details h3 {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+}
+
+.project-details p {
+    font-size: 1rem;
+}
+
+.project-links a, .project-links button {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.project-links a:hover, .project-links button:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.see-more-container .see-more-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100% !important;
+    }
+
+    .portfolio-container {
+        gap: 15px;
+    }
+}
