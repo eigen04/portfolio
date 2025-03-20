@@ -15,7 +15,7 @@ Welcome to my portfolio website repository! This project showcases my skills, pr
 
 ## 🌐 Live Demo
 Check out the live version of my portfolio website:  
-[PortfolioAnant04](https://anantportfolio04.netlify.app/)
+[Portfolio](anantagarwal.xyz)
 
 ## 🚀 Hosting
 This website is hosted on **Netlify** for fast and reliable performance.
